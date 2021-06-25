@@ -55,11 +55,8 @@ class ViewController: UIViewController {
     func bindTableData() {
         // Bind items to table
         viewModel.items.bind(to: tableView.rx.items(cellIdentifier: "cell", cellType: UITableViewCell.self)) { row, model, cell in
-            
             cell.textLabel?.text = model.title
             cell.imageView?.image = UIImage(systemName: model.imageName)
-            
-            
         }.disposed(by: bag)
         
         // Bind a model selected handler
@@ -69,7 +66,6 @@ class ViewController: UIViewController {
         
         // fetch items
         viewModel.fetchItems()
-        
     }
     
 }
