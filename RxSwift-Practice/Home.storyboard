@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="HomeViewController" customModule="RxSwift_Practice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PwQ-QX-6DA">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="uYO-ZO-Bvb">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="320"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="itr-9u-Is8">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="7zA-h1-07P"/>
+                                                </constraints>
+                                                <state key="normal" title="FirstSample"/>
+                                                <connections>
+                                                    <action selector="tapFirstSampleButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="N8S-lD-WbI"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="itK-Qx-P45">
+                                                <rect key="frame" x="0.0" y="110" width="414" height="100"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="om0-3y-XGZ"/>
+                                                </constraints>
+                                                <state key="normal" title="SecondSample"/>
+                                                <connections>
+                                                    <action selector="tapSecondSampleButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="FtN-WD-mL2"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nHM-lg-1qa" userLabel="OtherSample">
+                                                <rect key="frame" x="0.0" y="220" width="414" height="100"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="Pem-ev-fo7"/>
+                                                </constraints>
+                                                <state key="normal" title="OtherSample"/>
+                                                <connections>
+                                                    <action selector="tapOtherSampleButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="eZn-KO-O7h"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="uYO-ZO-Bvb" firstAttribute="trailing" secondItem="NrH-rI-XVk" secondAttribute="trailing" id="6MX-Bw-U24"/>
+                                    <constraint firstItem="uYO-ZO-Bvb" firstAttribute="top" secondItem="NrH-rI-XVk" secondAttribute="top" id="EDM-l0-AQh"/>
+                                    <constraint firstItem="uYO-ZO-Bvb" firstAttribute="bottom" secondItem="NrH-rI-XVk" secondAttribute="bottom" id="SY5-vc-dIN"/>
+                                    <constraint firstItem="uYO-ZO-Bvb" firstAttribute="leading" secondItem="NrH-rI-XVk" secondAttribute="leading" id="sfX-Lc-CKq"/>
+                                    <constraint firstItem="uYO-ZO-Bvb" firstAttribute="width" secondItem="4YM-zP-9Dq" secondAttribute="width" id="uUZ-jh-vit"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="NrH-rI-XVk"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="4YM-zP-9Dq"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PwQ-QX-6DA" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="CDc-DZ-H9S"/>
+                            <constraint firstItem="PwQ-QX-6DA" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="Kf2-Pc-kbD"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="PwQ-QX-6DA" secondAttribute="bottom" id="dOa-cS-rWW"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="PwQ-QX-6DA" secondAttribute="trailing" id="qJY-a7-D2l"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-20.289855072463769" y="103.79464285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

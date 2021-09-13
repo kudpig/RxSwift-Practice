@@ -31,7 +31,7 @@ struct ProductViewModel {
     }
 }
 
-class ViewController: UIViewController {
+final class OtherViewController: UIViewController {
     
     private let tableView: UITableView = {
         let table = UITableView()
@@ -52,7 +52,7 @@ class ViewController: UIViewController {
     }
 
 
-    func bindTableData() {
+    private func bindTableData() {
         // Bind items to table
         viewModel.items.bind(to: tableView.rx.items(cellIdentifier: "cell", cellType: UITableViewCell.self)) { row, model, cell in
             cell.textLabel?.text = model.title
