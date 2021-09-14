@@ -20,6 +20,27 @@ final class Router {
         window?.makeKeyAndVisible()
     }
     
+    func showFirst(fromVC: UIViewController) {
+        let storyboard = UIStoryboard(name: "FirstSample", bundle: nil)
+        let vc = storyboard.instantiateInitialViewController() as! FirstSampleViewController
+        
+        show(fromVC: fromVC, nextVC: vc)
+    }
+    
+    func showSecond(fromVC: UIViewController) {
+        let storyboard = UIStoryboard(name: "SecondSample", bundle: nil)
+        let vc = storyboard.instantiateInitialViewController() as! SecondSampleViewController
+        
+        show(fromVC: fromVC, nextVC: vc)
+    }
+    
+    func showThird(fromVC: UIViewController) {
+        let storyboard = UIStoryboard(name: "ThirdSample", bundle: nil)
+        let vc = storyboard.instantiateInitialViewController() as! ThirdSampleViewController
+        
+        show(fromVC: fromVC, nextVC: vc)
+    }
+    
     
     func showOther(fromVC: UIViewController) {
         let storyboard = UIStoryboard(name: "Other", bundle: nil)

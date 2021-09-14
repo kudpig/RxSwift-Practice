@@ -10,9 +10,15 @@ import UIKit
 class HomeViewController: UIViewController {
     
     @IBAction func tapFirstSampleButton(_ sender: UIButton) {
+        Router.shared.showFirst(fromVC: self)
     }
     
     @IBAction func tapSecondSampleButton(_ sender: UIButton) {
+        Router.shared.showSecond(fromVC: self)
+    }
+    
+    @IBAction func tapThirdSampleButton(_ sender: UIButton) {
+        Router.shared.showThird(fromVC: self)
     }
     
     @IBAction func tapOtherSampleButton(_ sender: UIButton) {
