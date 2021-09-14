@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="uYO-ZO-Bvb">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="760"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="870"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="itr-9u-Is8">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
@@ -80,13 +80,24 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VrT-2W-9kY">
                                                 <rect key="frame" x="0.0" y="550" width="414" height="100"/>
-                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <color key="backgroundColor" red="0.91372549020000005" green="0.66666666669999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="cga-UC-msc"/>
                                                 </constraints>
+                                                <state key="normal" title="RxSwiftCounter"/>
+                                                <connections>
+                                                    <action selector="tapRxSwiftCounter:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Mwx-EV-XCA"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t6i-ih-4IR">
+                                                <rect key="frame" x="0.0" y="660" width="414" height="100"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="Yef-yN-iBl"/>
+                                                </constraints>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nHM-lg-1qa" userLabel="OtherSample">
-                                                <rect key="frame" x="0.0" y="660" width="414" height="100"/>
+                                                <rect key="frame" x="0.0" y="770" width="414" height="100"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="Pem-ev-fo7"/>

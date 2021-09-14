@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RxSwiftCounterViewController" customModule="RxSwift_Practice" customModuleProvider="target">
+            <connections>
+                <outlet property="countDownButton" destination="CXM-xK-339" id="ODx-IA-JcD"/>
+                <outlet property="countLabel" destination="czW-oP-c6x" id="u41-FJ-Mea"/>
+                <outlet property="countResetButton" destination="x6f-Mx-lSH" id="rht-yO-G9W"/>
+                <outlet property="countUpButton" destination="y07-VJ-JCN" id="qWr-rj-wVM"/>
+                <outlet property="view" destination="cnC-pQ-jcd" id="oU5-zM-P88"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="cnC-pQ-jcd">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="9qn-Kl-Y6P">
+                    <rect key="frame" x="50" y="244" width="314" height="418"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="czW-oP-c6x">
+                            <rect key="frame" x="0.0" y="0.0" width="314" height="97"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y07-VJ-JCN">
+                            <rect key="frame" x="0.0" y="107" width="314" height="97"/>
+                            <state key="normal" title="カウントアップ"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CXM-xK-339">
+                            <rect key="frame" x="0.0" y="214" width="314" height="97"/>
+                            <state key="normal" title="カウントダウン"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x6f-Mx-lSH">
+                            <rect key="frame" x="0.0" y="321" width="314" height="97"/>
+                            <state key="normal" title="リセット"/>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="I7T-rS-GkT"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="I7T-rS-GkT" firstAttribute="bottom" secondItem="9qn-Kl-Y6P" secondAttribute="bottom" constant="200" id="09Q-GQ-fRu"/>
+                <constraint firstItem="9qn-Kl-Y6P" firstAttribute="top" secondItem="I7T-rS-GkT" secondAttribute="top" constant="200" id="RcL-wP-j6L"/>
+                <constraint firstItem="I7T-rS-GkT" firstAttribute="trailing" secondItem="9qn-Kl-Y6P" secondAttribute="trailing" constant="50" id="buC-D6-IN9"/>
+                <constraint firstItem="9qn-Kl-Y6P" firstAttribute="leading" secondItem="I7T-rS-GkT" secondAttribute="leading" constant="50" id="n7L-QL-S56"/>
+            </constraints>
+            <point key="canvasLocation" x="-20" y="120"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

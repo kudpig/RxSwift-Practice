@@ -53,6 +53,12 @@ final class Router {
         show(fromVC: fromVC, nextVC: vc)
     }
     
+    func showRxSwiftCounter(fromVC: UIViewController) {
+        let vc = RxSwiftCounterViewController()
+        
+        show(fromVC: fromVC, nextVC: vc)
+    }
+    
     
     func showOther(fromVC: UIViewController) {
         let storyboard = UIStoryboard(name: "Other", bundle: nil)

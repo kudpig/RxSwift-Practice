@@ -34,5 +34,8 @@ class HomeViewController: UIViewController {
         Router.shared.showDelegateCounter(fromVC: self)
     }
     
+    @IBAction func tapRxSwiftCounter(_ sender: UIButton) {
+        Router.shared.showRxSwiftCounter(fromVC: self)
+    }
     
 }
