@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="uYO-ZO-Bvb">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="540"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="650"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="itr-9u-Is8">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
@@ -62,9 +62,20 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="bte-q6-wJA"/>
                                                 </constraints>
+                                                <state key="normal" title="SampleCounter"/>
+                                                <connections>
+                                                    <action selector="tapSampleCounter:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Psi-XV-LZP"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bLb-9M-Q2D">
+                                                <rect key="frame" x="0.0" y="440" width="414" height="100"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="AaA-jW-8k4"/>
+                                                </constraints>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nHM-lg-1qa" userLabel="OtherSample">
-                                                <rect key="frame" x="0.0" y="440" width="414" height="100"/>
+                                                <rect key="frame" x="0.0" y="550" width="414" height="100"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="Pem-ev-fo7"/>

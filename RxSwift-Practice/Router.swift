@@ -41,6 +41,12 @@ final class Router {
         show(fromVC: fromVC, nextVC: vc)
     }
     
+    func showSampleCounter(fromVC: UIViewController) {
+        let vc = SampleCounterViewController()
+        
+        show(fromVC: fromVC, nextVC: vc)
+    }
+    
     
     func showOther(fromVC: UIViewController) {
         let storyboard = UIStoryboard(name: "Other", bundle: nil)
