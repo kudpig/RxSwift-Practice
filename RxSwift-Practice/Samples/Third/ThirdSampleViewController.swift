@@ -9,11 +9,11 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class ThirdSampleViewController: UIViewController {
+final class ThirdSampleViewController: UIViewController {
     
-    @IBOutlet weak var textField: UITextField!
-    @IBOutlet weak var countLabel: UILabel!
-    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet private weak var textField: UITextField!
+    @IBOutlet private weak var countLabel: UILabel!
+    @IBOutlet private weak var nameLabel: UILabel!
     
     private let disposeBag = DisposeBag()
     
