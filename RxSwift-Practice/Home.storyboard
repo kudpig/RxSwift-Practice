@@ -62,7 +62,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="bte-q6-wJA"/>
                                                 </constraints>
-                                                <state key="normal" title="SampleCounter"/>
+                                                <state key="normal" title="CallbackCounter"/>
                                                 <connections>
                                                     <action selector="tapSampleCounter:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Psi-XV-LZP"/>
                                                 </connections>

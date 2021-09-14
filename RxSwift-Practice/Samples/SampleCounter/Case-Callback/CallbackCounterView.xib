@@ -9,8 +9,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SampleCounterViewController" customModule="RxSwift_Practice" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CallbackCounterViewController" customModule="RxSwift_Practice" customModuleProvider="target">
             <connections>
+                <outlet property="countLabel" destination="MR1-Ul-gte" id="Guj-io-e3t"/>
                 <outlet property="view" destination="iN0-l3-epB" id="DlU-dw-uD2"/>
             </connections>
         </placeholder>
@@ -31,14 +32,23 @@
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fsq-R2-kuw">
                             <rect key="frame" x="0.0" y="107" width="314" height="97"/>
                             <state key="normal" title="カウントアップ"/>
+                            <connections>
+                                <action selector="countUp:" destination="-1" eventType="touchUpInside" id="DyS-60-keV"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="17h-F3-YGR">
                             <rect key="frame" x="0.0" y="214" width="314" height="97"/>
                             <state key="normal" title="カウントダウン"/>
+                            <connections>
+                                <action selector="countDown:" destination="-1" eventType="touchUpInside" id="fIG-2V-kwb"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ox-d8-GQw">
                             <rect key="frame" x="0.0" y="321" width="314" height="97"/>
                             <state key="normal" title="リセット"/>
+                            <connections>
+                                <action selector="countReset:" destination="-1" eventType="touchUpInside" id="Fba-tY-S03"/>
+                            </connections>
                         </button>
                     </subviews>
                 </stackView>

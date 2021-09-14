@@ -41,8 +41,8 @@ final class Router {
         show(fromVC: fromVC, nextVC: vc)
     }
     
-    func showSampleCounter(fromVC: UIViewController) {
-        let vc = SampleCounterViewController()
+    func showCallbackCounter(fromVC: UIViewController) {
+        let vc = CallbackCounterViewController()
         
         show(fromVC: fromVC, nextVC: vc)
     }
