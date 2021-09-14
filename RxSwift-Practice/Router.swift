@@ -47,6 +47,12 @@ final class Router {
         show(fromVC: fromVC, nextVC: vc)
     }
     
+    func showDelegateCounter(fromVC: UIViewController) {
+        let vc = DelegateCounterViewController()
+        
+        show(fromVC: fromVC, nextVC: vc)
+    }
+    
     
     func showOther(fromVC: UIViewController) {
         let storyboard = UIStoryboard(name: "Other", bundle: nil)

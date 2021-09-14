@@ -37,6 +37,7 @@ final class CallbackCounterViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Callback"
         viewModel = CallbackCounterViewModel()
     }
     

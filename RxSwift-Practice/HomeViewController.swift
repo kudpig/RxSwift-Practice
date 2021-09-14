@@ -25,8 +25,14 @@ class HomeViewController: UIViewController {
         Router.shared.showOther(fromVC: self)
     }
 
-    @IBAction func tapSampleCounter(_ sender: UIButton) {
+    @IBAction func tapCallbackCounter(_ sender: UIButton) {
         Router.shared.showCallbackCounter(fromVC: self)
     }
+    
+    
+    @IBAction func tapDelegateCounter(_ sender: UIButton) {
+        Router.shared.showDelegateCounter(fromVC: self)
+    }
+    
     
 }
