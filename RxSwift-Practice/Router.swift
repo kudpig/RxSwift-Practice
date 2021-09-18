@@ -59,6 +59,13 @@ final class Router {
         show(fromVC: fromVC, nextVC: vc)
     }
     
+    func showFilter(fromVC: UIViewController) {
+        let storyboard = UIStoryboard(name: "Filter", bundle: nil)
+        let vc = storyboard.instantiateInitialViewController() as! FilterViewController
+        
+        show(fromVC: fromVC, nextVC: vc)
+    }
+    
     
     func showOther(fromVC: UIViewController) {
         let storyboard = UIStoryboard(name: "Other", bundle: nil)

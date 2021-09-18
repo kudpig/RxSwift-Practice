@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="uYO-ZO-Bvb">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="870"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="980"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="itr-9u-Is8">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
@@ -95,9 +95,20 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="Yef-yN-iBl"/>
                                                 </constraints>
+                                                <state key="normal" title="FilterSample"/>
+                                                <connections>
+                                                    <action selector="tapFilterSampleButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="B2c-qc-pfi"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XS8-Dr-TXn">
+                                                <rect key="frame" x="0.0" y="770" width="414" height="100"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="WJB-Yk-Caa"/>
+                                                </constraints>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nHM-lg-1qa" userLabel="OtherSample">
-                                                <rect key="frame" x="0.0" y="770" width="414" height="100"/>
+                                                <rect key="frame" x="0.0" y="880" width="414" height="100"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="Pem-ev-fo7"/>

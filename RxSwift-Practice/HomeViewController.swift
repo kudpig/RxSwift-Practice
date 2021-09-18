@@ -38,4 +38,8 @@ class HomeViewController: UIViewController {
         Router.shared.showRxSwiftCounter(fromVC: self)
     }
     
+    @IBAction func tapFilterSampleButton(_ sender: UIButton) {
+        Router.shared.showFilter(fromVC: self)
+    }
+    
 }

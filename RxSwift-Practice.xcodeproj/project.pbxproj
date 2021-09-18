@@ -23,6 +23,8 @@
 		8F601E4A26F0A10300EDB98A /* RxSwiftCounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F601E4926F0A10300EDB98A /* RxSwiftCounterViewController.swift */; };
 		8F601E4C26F0A11400EDB98A /* RxSwiftCounterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F601E4B26F0A11400EDB98A /* RxSwiftCounterView.xib */; };
 		8F601E4E26F0A6DD00EDB98A /* RxSwiftCounterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F601E4D26F0A6DD00EDB98A /* RxSwiftCounterViewModel.swift */; };
+		8F601E5126F1390800EDB98A /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F601E5026F1390800EDB98A /* FilterViewController.swift */; };
+		8F601E5526F13B9600EDB98A /* Filter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F601E5426F13B9600EDB98A /* Filter.storyboard */; };
 		8FF9EAEA26855A770076853C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF9EAE926855A770076853C /* AppDelegate.swift */; };
 		8FF9EAEE26855A770076853C /* OtherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF9EAED26855A770076853C /* OtherViewController.swift */; };
 		8FF9EAF126855A770076853C /* Other.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FF9EAEF26855A770076853C /* Other.storyboard */; };
@@ -48,6 +50,8 @@
 		8F601E4926F0A10300EDB98A /* RxSwiftCounterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftCounterViewController.swift; sourceTree = "<group>"; };
 		8F601E4B26F0A11400EDB98A /* RxSwiftCounterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RxSwiftCounterView.xib; sourceTree = "<group>"; };
 		8F601E4D26F0A6DD00EDB98A /* RxSwiftCounterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftCounterViewModel.swift; sourceTree = "<group>"; };
+		8F601E5026F1390800EDB98A /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
+		8F601E5426F13B9600EDB98A /* Filter.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Filter.storyboard; sourceTree = "<group>"; };
 		8FF9EAE626855A770076853C /* RxSwift-Practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RxSwift-Practice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FF9EAE926855A770076853C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8FF9EAED26855A770076853C /* OtherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherViewController.swift; sourceTree = "<group>"; };
@@ -96,6 +100,7 @@
 				8F601E3426F05F9000EDB98A /* Second */,
 				8F601E3826F06F9300EDB98A /* Third */,
 				8F601E3D26F0867300EDB98A /* SampleCounter */,
+				8F601E4F26F137AD00EDB98A /* TableViewFilter */,
 				8F601E3526F05F9E00EDB98A /* Other */,
 			);
 			path = Samples;
@@ -140,9 +145,9 @@
 		8F601E3D26F0867300EDB98A /* SampleCounter */ = {
 			isa = PBXGroup;
 			children = (
-				8F601E4426F08E5D00EDB98A /* Case- RxSwift */,
 				8F601E4326F08E3800EDB98A /* Case- Delegate */,
 				8F601E4226F08E0F00EDB98A /* Case-Callback */,
+				8F601E4426F08E5D00EDB98A /* Case- RxSwift */,
 			);
 			path = SampleCounter;
 			sourceTree = "<group>";
@@ -173,6 +178,15 @@
 				8F601E4B26F0A11400EDB98A /* RxSwiftCounterView.xib */,
 			);
 			path = "Case- RxSwift";
+			sourceTree = "<group>";
+		};
+		8F601E4F26F137AD00EDB98A /* TableViewFilter */ = {
+			isa = PBXGroup;
+			children = (
+				8F601E5026F1390800EDB98A /* FilterViewController.swift */,
+				8F601E5426F13B9600EDB98A /* Filter.storyboard */,
+			);
+			path = TableViewFilter;
 			sourceTree = "<group>";
 		};
 		8FF9EADD26855A770076853C = {
@@ -274,6 +288,7 @@
 				8F601E4126F086C600EDB98A /* CallbackCounterView.xib in Resources */,
 				8F601E4826F0972800EDB98A /* DelegateCounterView.xib in Resources */,
 				8FF9EAF126855A770076853C /* Other.storyboard in Resources */,
+				8F601E5526F13B9600EDB98A /* Filter.storyboard in Resources */,
 				8F601E3A26F06FA700EDB98A /* ThirdSample.storyboard in Resources */,
 				8F601E2926EFE0FD00EDB98A /* Home.storyboard in Resources */,
 				8F601E2F26EFE91900EDB98A /* FirstSample.storyboard in Resources */,
@@ -335,6 +350,7 @@
 				8F601E2D26EFE90300EDB98A /* FirstSampleViewController.swift in Sources */,
 				8F601E3126F05F5600EDB98A /* SecondSampleViewController.swift in Sources */,
 				8F601E3C26F06FB800EDB98A /* ThirdSampleViewController.swift in Sources */,
+				8F601E5126F1390800EDB98A /* FilterViewController.swift in Sources */,
 				8FF9EAEE26855A770076853C /* OtherViewController.swift in Sources */,
 				8FF9EAEA26855A770076853C /* AppDelegate.swift in Sources */,
 				8F601E4A26F0A10300EDB98A /* RxSwiftCounterViewController.swift in Sources */,

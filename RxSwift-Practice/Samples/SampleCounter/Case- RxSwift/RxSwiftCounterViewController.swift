@@ -33,6 +33,7 @@ final class RxSwiftCounterViewController: UIViewController {
         let input = CounterViewModelInput(countUpButton: countUpButton.rx.tap.asObservable(),
                                           countDownButton: countDownButton.rx.tap.asObservable(),
                                           countResetButton: countResetButton.rx.tap.asObservable())
+        // viewModelをインスタンス化
         viewModel.setup(input: input)
         
         viewModel.outputs?.counterText

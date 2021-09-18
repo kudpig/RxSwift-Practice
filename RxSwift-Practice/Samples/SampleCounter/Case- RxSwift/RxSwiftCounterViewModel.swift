@@ -27,10 +27,12 @@ struct CounterViewModelInput {
      */
 }
 
+// viewModelに準拠させる。Viewにoutputするもの(ルール)
 protocol CounterViewModelOutput: AnyObject {
     var counterText: Driver<String?> { get }
 }
 
+// ViewModelそのもののルール
 protocol CounterViewModelType: AnyObject {
     
     var outputs: CounterViewModelOutput? { get }
